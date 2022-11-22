@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey form</title>
+</head>
+<body> 
+    <header>
+        <h1 id="title">Surfey Form for PC Game Player</h1>
+    </header>   
+    <p id="description">Fill in The Data Below :</p>
+    <form id="survey-form">
+            <!-- personal data -->
+            <label for="name" id="name-label">Name</label>
+            <input id="name" type="text" name="name" placeholder="Enter your name" class="form-input" required>
+            <br>
+            <label for="email" id="email-label">Email</label>
+            <input id="email" type="email" name="email" placeholder="Enter your nickname" class="form-input" required>
+            <br>
+            <label for="number" id="number-label">Age</label>
+            <input type="number" name="number" id="number" min="5" max="30" placeholder="Age" class="form-input" required>
+            <br>
+            <!-- platform select -->
+            <label for="dropdown" id="platform">What platform do you use to download or play the game?</label>
+            <select id="dropdown" class="form-input" required>
+                <option value="">(select one)</option>
+                <option value="1">Steam</option>
+                <option value="2">Epic Games</option>
+                <option value="3">Riot Games</option>
+                <option value="4">Other</option>
+            </select>
+            <br>
+            <!-- radio button -->
+            <label for="game-type">What type of game do you play?</label>
+            <label><input type="radio" name="game-type" value="offline" >Offline</label>
+            <label><input type="radio" name="game-type" value="online">Online</label>
+            <label><input type="radio" name="game-type" value="both">Both</label>
+            <br>
+            <!-- checkbox  -->
+            <label for="most-game">Below are the 5 games with the most users in the world,which game do you often play? </label>
+            <label><input type="checkbox" name="most-game" value="minecraft">MINECRAFT</label>
+            <label><input type="checkbox" name="most-game" value="dota">DOTA 2</label>
+            <label><input type="checkbox" name="most-game" value="valorant">VALORANT</label>
+            <label><input type="checkbox" name="most-game" value="fifa">FIFA</label>
+            <label><input type="checkbox" name="most-game" value="gta">GTA V</label>
+            <br>
+            <!-- comment box -->
+            <label id="textarea">Additional Comment </label>
+            <textarea name="comment" id="textarea" cols="52" rows="5" placeholder="Enter your comment" class="comment"></textarea>
+            <br>
+            <!-- submit button -->
+            <input id="submit" type="submit" value="Submit" class="submit-button">
+    </form>
+</body>
+</html>
